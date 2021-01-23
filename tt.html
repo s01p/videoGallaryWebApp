@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    
+        
+    {% for post in list %}
+        <div class="post">
+        
+          <p> {{ post.name }} </p>   
+          <a href = "#"><img src = {{ post.url_img   }} ></a> 
+
+        </div>
+    {% endfor %}
+        
+
+        
+    
+    
+   
+
+
+{% endblock %}
